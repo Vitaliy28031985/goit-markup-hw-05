@@ -11,6 +11,8 @@
 <link rel="stylesheet" href="./css/styles.css">
     </head>
     <body class="page">
+        <div class="box-backdrop"><div class="backdrop" data-modal>
+            <div class="modal"><button class="modal-button" data-modal-close>×</button></div></div>
         <header class="page-header">
             <div class="container main-hader">
             <nav class="main-hader">
@@ -36,7 +38,7 @@
     <section class="hero">
         <div class="container">
     <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
-        <button class="hero-buton">Заказать услугу</button>
+        <button data-modal-open class="hero-buton">Заказать услугу</button>
     </div>
     </section>
     <section class="section section-benefits">
@@ -82,18 +84,28 @@
     </ul>
 </div>
 </section>
+</div>
 <section class="occupation section">
     <div class="container">
     <h2 class="section-work">Чем мы занимаемся</h2>
     <ul class="work-list">
     <li class="occupation-margin">
     <img src="./images/development.jpg" alt="Создание сайта" width="370">
+    <div class="box-card">
+        <p class="box-card-text">Десктопные приложения</p>
+    </div>
     </li>
     <li class="occupation-margin">
         <img src="./images/mobile.jpg" alt="Оптимизация для мобильных устройств" width="370">
+        <div class="box-card">
+            <p class="box-card-text">Мобильные приложения</p>
+        </div>
     </li>
     <li class="occupation-margin">
         <img src="./images/design.jpg" alt="Дизайн" width="370">
+        <div class="box-card">
+            <p class="box-card-text">Дизайнерские решения</p>
+        </div>
     </li>
     </ul>
 </div>
@@ -355,5 +367,6 @@
 </ul>
 </div>
 </footer>
+<script src="./js/modal.js"></script>
     </body>
 </html>
